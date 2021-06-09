@@ -1,0 +1,18 @@
+Copper	HEX #C84E00
+Persimmon HEX #E89923
+Dandelion HEX #FFD960
+Piedmont HEX #A1B70D	
+Eno	HEX #339898	
+MagnoliaHEX #1D6363	
+Prussian BlueHEX #005587	
+Shale Blue HEX #0577B1
+Ironweed HEX #993399	
+Hatteras HEX #E2E6ED	
+Whisper Gray HEX #F3F2F1
+Ginger Beer	HEX #FCF7E5
+Dogwood	HEX #988675
+Shackleford	HEX #DAD0C6	
+Cast Iron	HEX #262626	
+Graphite	HEX #666666
+Granite	HEX #B5B5B5
+Limestone HEX #E5E5E5
