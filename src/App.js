@@ -4,6 +4,9 @@ import { Button } from "@material-ui/core";
 
 import Home from "./Pages/Home";
 import AboutMe from "./Pages/AboutMe";
+import EnergyStuff from "./Pages/EnergyStuff";
+import Projects from "./Pages/Projects";
+import Wander from "./Pages/Wander";
 
 function App() {
   const [clickage, setClickage] = useState({
@@ -32,6 +35,15 @@ function App() {
           </Route>
           <Route exact path="/AboutMe">
             <AboutMe />
+          </Route>
+          <Route exact path="/Energy">
+            <EnergyStuff />
+          </Route>
+          <Route exact path="/Projects">
+            <Projects />
+          </Route>
+          <Route exact path="/Wander">
+            <Wander />
           </Route>
         </Switch>
       </BrowserRouter>

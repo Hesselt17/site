@@ -19,13 +19,28 @@ const Home = ({ handleClickage, clickage }) => {
           >
             Top
           </Button>
-          <Button id="bottom" onClick={() => handleClickage("bottom")}>
+          <Button
+            id="bottom"
+            onClick={() => handleClickage("bottom")}
+            component={Link}
+            to="/Projects"
+          >
             Bottom
           </Button>
-          <Button id="left" onClick={() => handleClickage("left")}>
+          <Button
+            id="left"
+            onClick={() => handleClickage("left")}
+            component={Link}
+            to="/Wander"
+          >
             Left
           </Button>
-          <Button id="right" onClick={() => handleClickage("right")}>
+          <Button
+            id="right"
+            onClick={() => handleClickage("right")}
+            component={Link}
+            to="/Energy"
+          >
             Right
           </Button>
         </div>
