@@ -17,7 +17,7 @@ const Home = ({ handleClickage, clickage }) => {
             component={Link}
             to="/AboutMe"
           >
-            Top
+            About Me
           </Button>
           <Button
             id="bottom"
@@ -25,7 +25,7 @@ const Home = ({ handleClickage, clickage }) => {
             component={Link}
             to="/Projects"
           >
-            Bottom
+            Projects
           </Button>
           <Button
             id="left"
@@ -33,7 +33,7 @@ const Home = ({ handleClickage, clickage }) => {
             component={Link}
             to="/Wander"
           >
-            Left
+            Wander
           </Button>
           <Button
             id="right"
@@ -41,7 +41,7 @@ const Home = ({ handleClickage, clickage }) => {
             component={Link}
             to="/Energy"
           >
-            Right
+            Energy
           </Button>
         </div>
       </div>
