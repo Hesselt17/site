@@ -33,7 +33,7 @@ function App() {
           <Route exact path="/">
             <Home handleClickage={handleClickage} clickage={clickage} />
           </Route>
-          <Route exact path="/AboutMe">
+          <Route exact path="/AboutMee">
             <AboutMe />
           </Route>
           <Route exact path="/Energy">
