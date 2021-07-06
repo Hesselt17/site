@@ -17,7 +17,7 @@ const Home = ({ handleClickage, clickage }) => {
             component={Link}
             to="/AboutMe"
           >
-            About Mee
+            About Me
           </Button>
           <Button
             id="bottom"
