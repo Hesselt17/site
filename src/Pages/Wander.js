@@ -10,7 +10,7 @@ const Wander = () => {
     <div>
       <div>Wander</div>
       <TravelMap setTooltipContent={setContent} />
-      <ReactTooltip>{content}</ReactTooltip>;
+      <ReactTooltip>{content}</ReactTooltip>
     </div>
   );
 };

@@ -1,11 +1,21 @@
 import "./Transition.css";
 import React, { useState } from "react";
+import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 import { Button } from "@material-ui/core";
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: "100%",
+    margin: "0 auto",
+  },
+}));
+
 const Home = ({ handleClickage, clickage }) => {
+  const classes = useStyles();
+
   return (
-    <div>
+    <div className={classes.root}>
       <header>
         <p>Tommy Hessel</p>
       </header>
