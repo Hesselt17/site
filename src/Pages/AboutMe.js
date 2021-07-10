@@ -9,9 +9,9 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     left: 0,
     margin: "0 auto",
-    padding: theme.spacing(2),
+    padding: theme.spacing(20),
     width: "100%",
-    background: "linear-gradient(180deg, #e8e8e8 30%, #bababa 90%)",
+    background: "linear-gradient(0deg, #e8e8e8 30%, #bababa 90%)",
   },
 }));
 
