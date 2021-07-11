@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
   dividerLine: {
     margin: "auto",
-    height: "2vh",
+    height: "1vh",
     width: "85vw",
   },
 }));
@@ -28,7 +28,7 @@ const AboutMe = () => {
       <div>
         <Grid>
           <Paper className={classes.paper}>About Me</Paper>
-          <Grid container justifyContent="center">
+          <Grid container>
             <Typography>Early Life</Typography>
             <Divider className={classes.dividerLine} />
           </Grid>
