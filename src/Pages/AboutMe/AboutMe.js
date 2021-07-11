@@ -8,16 +8,23 @@ import { Divider } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    //height: "20vh",
     padding: theme.spacing(15),
-    //margin: "0 auto",
     background: "linear-gradient(0deg, #e8e8e8 30%, #bababa 90%)",
   },
-  dividerLine: {
-    margin: "auto",
-    height: "1vh",
-    width: "85vw",
+  subsectionGrid: {
+    padding: "2vh 1vw",
+    //padding: theme.spacing(2)
   },
+  sectionHeader: {
+    paddingRight: "2vw",
+  },
+  dividerLine: {
+    marginTop: "auto",
+    marginBottom: "auto",
+    height: "1vh",
+    width: "80%",
+  },
+  description: {},
 }));
 
 const AboutMe = () => {
@@ -28,9 +35,17 @@ const AboutMe = () => {
       <div>
         <Grid>
           <Paper className={classes.paper}>About Me</Paper>
-          <Grid container>
-            <Typography>Early Life</Typography>
+          <Grid container className={classes.subsectionGrid}>
+            <Typography className={classes.sectionHeader}>
+              Early Life
+            </Typography>
             <Divider className={classes.dividerLine} />
+            <Grid container>
+              <Typography></Typography>
+              <Typography className={classes.description}>
+                Tommy Hessel was born on February 14th, 1999.
+              </Typography>
+            </Grid>
           </Grid>
         </Grid>
       </div>
