@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import ReactTooltip from "react-tooltip";
-import "./Style.css";
 
-import TravelMap from "./Widgets/TravelMap";
+import TravelMap from "./TravelMap";
 
 const Wander = () => {
   const [content, setContent] = useState("");

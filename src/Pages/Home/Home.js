@@ -1,8 +1,8 @@
-import "./Transition.css";
 import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 import { Button } from "@material-ui/core";
+import "../Style.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {

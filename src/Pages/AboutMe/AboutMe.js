@@ -4,14 +4,19 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import ButtonBase from "@material-ui/core/ButtonBase";
+import { Divider } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    left: 0,
-    margin: "0 auto",
-    padding: theme.spacing(20),
-    width: "100%",
+    //height: "20vh",
+    padding: theme.spacing(15),
+    //margin: "0 auto",
     background: "linear-gradient(0deg, #e8e8e8 30%, #bababa 90%)",
+  },
+  dividerLine: {
+    margin: "auto",
+    height: "2vh",
+    width: "85vw",
   },
 }));
 
@@ -21,7 +26,13 @@ const AboutMe = () => {
   return (
     <div>
       <div>
-        <Paper className={classes.paper}>About Me</Paper>
+        <Grid>
+          <Paper className={classes.paper}>About Me</Paper>
+          <Grid container justifyContent="center">
+            <Typography>Early Life</Typography>
+            <Divider className={classes.dividerLine} />
+          </Grid>
+        </Grid>
       </div>
     </div>
   );

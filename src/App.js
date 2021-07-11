@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { BrowserRouter, Route, Switch /*Link*/ } from "react-router-dom";
 //import { Button } from "@material-ui/core";
 
-import Home from "./Pages/Home";
-import AboutMe from "./Pages/AboutMe";
-import EnergyStuff from "./Pages/EnergyStuff";
-import Projects from "./Pages/Projects";
-import Wander from "./Pages/Wander";
+import Home from "./Pages/Home/Home";
+import AboutMe from "./Pages/AboutMe/AboutMe";
+import EnergyStuff from "./Pages/Energy/EnergyStuff";
+import Projects from "./Pages/Projects/Projects";
+import Wander from "./Pages/Wander/Wander";
 
 function App() {
   const [clickage, setClickage] = useState({
