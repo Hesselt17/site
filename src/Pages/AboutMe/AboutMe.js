@@ -7,24 +7,22 @@ import ButtonBase from "@material-ui/core/ButtonBase";
 import { Divider } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+    flexShrink: 1,
+  },
   paper: {
-    padding: theme.spacing(15),
+    padding: theme.spacing(10),
     background: "linear-gradient(0deg, #e8e8e8 30%, #bababa 90%)",
   },
   subsectionGrid: {
     padding: "2vh 1vw",
-    //padding: theme.spacing(2)
-  },
-  sectionHeader: {
-    paddingRight: "2vw",
   },
   dividerLine: {
-    marginTop: "auto",
-    marginBottom: "auto",
     height: "1vh",
-    width: "80%",
+    background: "linear-gradient(270deg, #e8e8e8 30%, #bababa 90%)",
   },
-  description: {},
+  description: { fontSize: "0.85rem" },
 }));
 
 const AboutMe = () => {
@@ -33,18 +31,24 @@ const AboutMe = () => {
   return (
     <div>
       <div>
-        <Grid>
+        <Grid className={classes.root}>
           <Paper className={classes.paper}>About Me</Paper>
           <Grid container className={classes.subsectionGrid}>
-            <Typography className={classes.sectionHeader}>
-              Early Life
-            </Typography>
-            <Divider className={classes.dividerLine} />
+            <Grid item xs>
+              <Typography>Bio</Typography>
+            </Grid>
+            <Grid item xs={10} sm={11} style={{ margin: "auto" }}>
+              <Divider className={classes.dividerLine} />
+            </Grid>
             <Grid container>
-              <Typography></Typography>
-              <Typography className={classes.description}>
-                Tommy Hessel was born on February 14th, 1999.
-              </Typography>
+              <Grid item xs></Grid>
+              <Grid item xs={10} sm={11}>
+                <Typography className={classes.description}>
+                  Tommy Hessel was born on February 14th, 1999. Tommy Hessel was
+                  born on February 14th, 1999. Tommy Hessel was born on February
+                  14th, 1999.
+                </Typography>
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
