@@ -19,10 +19,16 @@ const rounded = (num) => {
   }
 };
 
-const TravelMap = ({ setTooltipContent }) => {
+const TravelMap = ({ setTooltipContent, mapHeight, mapWidth }) => {
   return (
     <div>
-      <ComposableMap data-tip="" projectionConfig={{ scale: 200 }}>
+      <ComposableMap
+        data-tip=""
+        projectionConfig={{ scale: 150 }}
+        //width={400}
+        //height={400}
+        style={{ width: "100%", height: "500px" }}
+      >
         <ZoomableGroup>
           <Geographies geography={geoUrl}>
             {({ geographies }) =>

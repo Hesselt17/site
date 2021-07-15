@@ -17,6 +17,10 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     color: "white",
   },
+  subsectionGrid: {
+    padding: "2vh 1vw",
+    textAlign: "center",
+  },
 }));
 
 const Wander = () => {
@@ -30,9 +34,15 @@ const Wander = () => {
             Wander
           </Typography>
         </Paper>
+        <Grid item xs className={classes.subsectionGrid}>
+          <TravelMap
+            setTooltipContent={setContent}
+            mapHeight="300"
+            mapWidth="300"
+          />
+          <ReactTooltip>{content}</ReactTooltip>
+        </Grid>
       </Grid>
-      <TravelMap setTooltipContent={setContent} />
-      <ReactTooltip>{content}</ReactTooltip>
     </div>
   );
 };
