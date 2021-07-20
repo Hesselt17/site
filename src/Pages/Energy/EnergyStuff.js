@@ -23,7 +23,7 @@ const EnergyStuff = () => {
   return (
     <div>
       <Grid className={classes.root}>
-        <Paper className={classes.paper}>
+        <Paper square={true} className={classes.paper}>
           <Typography variant="h4" className={classes.energyHeader}>
             Energy
           </Typography>

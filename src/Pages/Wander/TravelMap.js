@@ -24,10 +24,10 @@ const TravelMap = ({ setTooltipContent, mapHeight, mapWidth }) => {
     <div>
       <ComposableMap
         data-tip=""
-        projectionConfig={{ scale: 150 }}
-        //width={400}
-        //height={400}
-        style={{ width: "100%", height: "500px" }}
+        projectionConfig={{ scale: 175 }}
+        width={900}
+        height={550}
+        //style={{ width: "90%", height: "100%" }}
       >
         <ZoomableGroup>
           <Geographies geography={geoUrl}>
