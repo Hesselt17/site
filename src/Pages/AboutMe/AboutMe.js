@@ -38,15 +38,20 @@ const AboutMe = () => {
             </Typography>
           </Paper>
           <Grid container className={classes.subsectionGrid}>
-            <Grid item xs style={{ textAlign: "center" }}>
+            <Grid item xs={1} style={{ textAlign: "center" }}>
               <Typography>Bio</Typography>
             </Grid>
-            <Grid item xs={10} sm={11} style={{ margin: "auto" }}>
+            <Grid
+              item
+              xs={10}
+              sm={10}
+              style={{ marginTop: "auto", marginBottom: "auto" }}
+            >
               <Divider className={classes.dividerLine} />
             </Grid>
             <Grid container>
-              <Grid item xs></Grid>
-              <Grid item xs={10} sm={11}>
+              <Grid item xs={1}></Grid>
+              <Grid item xs={10} sm={10}>
                 <Typography className={classes.description}>
                   Tommy Hessel is a 2021 graduate of Duke University where he
                   studied Computer Science, Energy & the Environment, and
