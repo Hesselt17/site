@@ -18,6 +18,7 @@ const Home = ({ handleClickage, clickage }) => {
     <div className={classes.root}>
       <header>
         <p>Tommy Hessel</p>
+        <p>Website Under Construction</p>
       </header>
       <div className="container">
         <div className="buttons">

@@ -38,17 +38,18 @@ const AboutMe = () => {
             </Typography>
           </Paper>
           <Grid container className={classes.subsectionGrid}>
-            <Grid item xs={1} style={{ textAlign: "center" }}>
-              <Typography>Bio</Typography>
+            <Grid item xs style={{ textAlign: "center" }}>
+              <Typography>Biography</Typography>
             </Grid>
             <Grid
               item
               xs={10}
               sm={10}
-              style={{ marginTop: "auto", marginBottom: "auto" }}
+              style={{ margin: "auto", alignContent: "center" }}
             >
               <Divider className={classes.dividerLine} />
             </Grid>
+            <Grid item xs></Grid>
             <Grid container>
               <Grid item xs={1}></Grid>
               <Grid item xs={10} sm={10}>
@@ -70,6 +71,7 @@ const AboutMe = () => {
                   things aviation.
                 </Typography>
               </Grid>
+              <Grid item xs={1}></Grid>
             </Grid>
           </Grid>
         </Grid>
