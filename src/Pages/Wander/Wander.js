@@ -42,11 +42,13 @@ const Wander = () => {
         </Paper>
         <Grid item xs className={classes.subsectionGrid}>
           <Paper className={classes.mapBackground}>
-            <TravelMap
-              setTooltipContent={setContent}
-              mapHeight="100%"
-              mapWidth="100%"
-            />
+            <div>
+              <TravelMap
+                setTooltipContent={setContent}
+                mapHeight="100%"
+                mapWidth="100%"
+              />
+            </div>
           </Paper>
           <ReactTooltip>{content}</ReactTooltip>
         </Grid>
