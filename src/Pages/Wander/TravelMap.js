@@ -9,7 +9,7 @@ import {
 //const geoUrl ="https://raw.githubusercontent.com/zcreativelabs/react-simple-maps/master/topojson-maps/world-110m.json";
 
 const geoUrl =
-  "https://raw.githubusercontent.com/Hesselt17/site/master/src/Pages/Wander/visited.json?token=AJ3QM4LBHELB5VDUAAA7ULTBDYGDG";
+  "https://raw.githubusercontent.com/Hesselt17/site/master/src/Pages/Wander/visited.json";
 
 const TravelMap = ({ setTooltipContent, mapHeight, mapWidth }) => {
   return (
